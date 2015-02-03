@@ -1,6 +1,8 @@
 ole golang development environment
 ==================================
 
+![screen](https://raw.githubusercontent.com/oliveagle/ole-golang-dev-env/master/screen.png "Screen")
+
 why?
 -----
 
