@@ -25,3 +25,9 @@ RUN chsh -s /bin/zsh
 
 ENV GOPATH /gopath
 ENV HOME /root
+
+RUN mkdir /root/bin && export PATH=%PATH%:/root/bin
+COPY buildcmd /root/bin/
+COPY buildpkg /root/bin/
+COPY go-cc-major /root/bin/
+

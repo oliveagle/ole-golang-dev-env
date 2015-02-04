@@ -1,0 +1,13 @@
+#!/bin/sh
+# buildpkg
+
+# cd $GOROOT/src
+# cd /usr/lib/golang/src
+
+ARCH=("darwin/386" "darwin/amd64" "linux/386" "linux/amd64" "windows/386" "windows/amd64")
+
+for arch in ${ARCH[*]}; do
+    # echo $arch
+    go tool dist install -v arch
+    go install -v -a std
+done
