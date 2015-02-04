@@ -15,7 +15,6 @@ if [ -n "$1" ]; then
         export GOARCH=$1
 fi
 
-# cd $GOROOT/src
-cd /usr/lib/golang/src
+cd $GOROOT/src
 go tool dist install -v pkg/runtime
 go install -v -a std
